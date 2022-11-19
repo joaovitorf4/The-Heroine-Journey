@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/awesomeness.mp3-9201a0f310c62612071bc2d0c4941eba.mp3str"
+
+[deps]
+
+source_file="res://arte/music/awesomeness.mp3"
+dest_files=[ "res://.import/awesomeness.mp3-9201a0f310c62612071bc2d0c4941eba.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/run.mp3-0f274166a1a632033317451c24984f7b.mp3str"
+
+[deps]
+
+source_file="res://arte/music/run.mp3"
+dest_files=[ "res://.import/run.mp3-0f274166a1a632033317451c24984f7b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

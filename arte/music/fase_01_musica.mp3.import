@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/fase_01_musica.mp3-e0006e2b3aded747e27a7b93e0e97b89.mp3str"
+
+[deps]
+
+source_file="res://arte/music/fase_01_musica.mp3"
+dest_files=[ "res://.import/fase_01_musica.mp3-e0006e2b3aded747e27a7b93e0e97b89.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

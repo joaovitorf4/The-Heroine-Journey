@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pulo.mp3-aa1dbbb19e203ceff6be15fb2a5b4cc3.mp3str"
+
+[deps]
+
+source_file="res://arte/music/pulo.mp3"
+dest_files=[ "res://.import/pulo.mp3-aa1dbbb19e203ceff6be15fb2a5b4cc3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
