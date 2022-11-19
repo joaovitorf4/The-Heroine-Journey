@@ -1,0 +1,275 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://font/CloisterBlack.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scripts/controles.gd" type="Script" id=2]
+[ext_resource path="res://arte/cenario/2_Parallax background/Country.png" type="Texture" id=4]
+[ext_resource path="res://arte/cenario/2_Parallax background/background.png" type="Texture" id=5]
+[ext_resource path="res://arte/cenario/2_Parallax background/Back_Forest_1.png" type="Texture" id=6]
+[ext_resource path="res://arte/cenario/2_Parallax background/Cloud_2.png" type="Texture" id=7]
+[ext_resource path="res://arte/cenario/2_Parallax background/props_clouds.png" type="Texture" id=8]
+[ext_resource path="res://arte/cenario/2_Parallax background/Cloud_3.png" type="Texture" id=9]
+[ext_resource path="res://arte/cenario/2_Parallax background/Cloud_1.png" type="Texture" id=10]
+[ext_resource path="res://arte/cenario/2_Parallax background/Back_Forest_2.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 78
+outline_size = 10
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 44
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 100
+outline_size = 10
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=5]
+Button/colors/font_color = Color( 0.407843, 0.0352941, 0.0352941, 1 )
+Button/colors/font_color_hover = Color( 0.615686, 0.054902, 0.054902, 1 )
+Button/colors/font_color_pressed = Color( 0.407843, 0.0352941, 0.0352941, 1 )
+Button/fonts/font = SubResource( 6 )
+Button/styles/disabled = SubResource( 7 )
+Button/styles/focus = SubResource( 8 )
+Button/styles/hover = SubResource( 9 )
+Button/styles/normal = SubResource( 10 )
+Button/styles/pressed = SubResource( 11 )
+
+[sub_resource type="Shader" id=22]
+code = "shader_type canvas_item;
+
+uniform vec2 Direction = vec2(1.0,0.0);
+uniform float Speed = 0.02f;
+
+void fragment(){
+	
+	COLOR = texture(TEXTURE, UV + (Direction * TIME * Speed));
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id=20]
+shader = SubResource( 22 )
+shader_param/Direction = Vector2( 1, 0 )
+shader_param/Speed = 0.02
+
+[sub_resource type="Shader" id=23]
+code = "shader_type canvas_item;
+
+uniform vec2 Direction = vec2(1.0,0.0);
+uniform float Speed = 0.009f;
+
+void fragment(){
+	
+	COLOR = texture(TEXTURE, UV + (Direction * TIME * Speed));
+	
+}
+"
+
+[sub_resource type="ShaderMaterial" id=21]
+shader = SubResource( 23 )
+shader_param/Direction = Vector2( 1, 0 )
+shader_param/Speed = 0.009
+
+[node name="Controls" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_default_cursor_shape = 2
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -20.0
+margin_top = -1.0
+margin_right = -20.0
+margin_bottom = 59.0
+custom_colors/font_color = Color( 0.407843, 0.0352941, 0.0352941, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Controls"
+align = 1
+
+[node name="Label2" type="Label" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 118.0
+margin_top = -175.0
+margin_right = 508.0
+margin_bottom = 132.0
+custom_colors/font_color = Color( 0.407843, 0.0352941, 0.0352941, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Walk Left: a
+Walk Right: d
+Jump: Spacebar
+Drink hp Potion: q
+Drink mp Potion: r"
+align = 1
+
+[node name="Label3" type="Label" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -617.0
+margin_top = -138.0
+margin_right = -63.0
+margin_bottom = 107.0
+custom_colors/font_color = Color( 0.407843, 0.0352941, 0.0352941, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Open inventory: tab
+Interact: e
+Melee Attack: left mouse
+Speel Attack: right mouse"
+align = 1
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1435.0
+margin_top = -213.0
+margin_right = 1278.0
+margin_bottom = -206.0
+rect_pivot_offset = Vector2( 6, 0 )
+color = Color( 0.407843, 0.0352941, 0.0352941, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -11.0
+margin_top = -210.0
+margin_right = -5.0
+margin_bottom = 158.0
+rect_pivot_offset = Vector2( 6, 0 )
+color = Color( 0.407843, 0.0352941, 0.0352941, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1435.0
+margin_top = 158.0
+margin_right = 1415.0
+margin_bottom = 163.0
+rect_pivot_offset = Vector2( 6, 0 )
+color = Color( 0.407843, 0.0352941, 0.0352941, 1 )
+
+[node name="back" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -143.0
+margin_top = -126.0
+margin_right = 125.0
+margin_bottom = -8.0
+theme = SubResource( 5 )
+text = "Return"
+script = ExtResource( 2 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ceu" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 768, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ceu"]
+position = Vector2( 6, 0 )
+scale = Vector2( 2, 3.5 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="nuvem" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1076, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/nuvem"]
+material = SubResource( 20 )
+position = Vector2( 5, 150 )
+scale = Vector2( 4, 2 )
+texture = ExtResource( 8 )
+centered = false
+
+[node name="nuvem4" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2( 1.6, 1 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/nuvem4"]
+material = SubResource( 21 )
+position = Vector2( 0, -5 )
+scale = Vector2( 2.5, 2.767 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="nuvem5" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2( 1.6, 1 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/nuvem5"]
+position = Vector2( 0, -4 )
+scale = Vector2( 2.5, 2.762 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="nuvem3" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2( 1.6, 1 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/nuvem3"]
+position = Vector2( 0, -5 )
+scale = Vector2( 2.5, 2.767 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="arvores" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2( 1.6, 1 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/arvores"]
+position = Vector2( 0, 35 )
+scale = Vector2( 2.5, 2.6 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="arvores2" type="ParallaxLayer" parent="ParallaxBackground"]
+scale = Vector2( 1.6, 1 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/arvores2"]
+position = Vector2( 0, -10 )
+scale = Vector2( 2.5, 2.6 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="castelo" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1075.2, 5 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/castelo"]
+position = Vector2( 0, 40 )
+scale = Vector2( 2.8, 3.4 )
+texture = ExtResource( 4 )
+centered = false
+
+[connection signal="pressed" from="back" to="back" method="_on_back_pressed"]

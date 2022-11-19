@@ -1,0 +1,102 @@
+[gd_scene load_steps=44 format=2]
+
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_2.png" type="Texture" id=1]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_3.png" type="Texture" id=2]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_1.png" type="Texture" id=3]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_5.png" type="Texture" id=4]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_6.png" type="Texture" id=5]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_10.png" type="Texture" id=6]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_9.png" type="Texture" id=7]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_1.png" type="Texture" id=8]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_4.png" type="Texture" id=9]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_2.png" type="Texture" id=10]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_3.png" type="Texture" id=11]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_6.png" type="Texture" id=12]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_5.png" type="Texture" id=13]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_8.png" type="Texture" id=14]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_7.png" type="Texture" id=15]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_4.png" type="Texture" id=16]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Attack/Bringer-of-Death_Attack_7.png" type="Texture" id=17]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Idle/Bringer-of-Death_Idle_7.png" type="Texture" id=18]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Hurt/Bringer-of-Death_Hurt_2.png" type="Texture" id=19]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Hurt/Bringer-of-Death_Hurt_3.png" type="Texture" id=20]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Idle/Bringer-of-Death_Idle_3.png" type="Texture" id=21]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Idle/Bringer-of-Death_Idle_2.png" type="Texture" id=22]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Idle/Bringer-of-Death_Idle_4.png" type="Texture" id=23]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_9.png" type="Texture" id=24]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Walk/Bringer-of-Death_Walk_1.png" type="Texture" id=25]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Walk/Bringer-of-Death_Walk_3.png" type="Texture" id=26]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png" type="Texture" id=27]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Idle/Bringer-of-Death_Idle_6.png" type="Texture" id=28]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_8.png" type="Texture" id=29]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Death/Bringer-of-Death_Death_10.png" type="Texture" id=30]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Hurt/Bringer-of-Death_Hurt_1.png" type="Texture" id=31]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Idle/Bringer-of-Death_Idle_5.png" type="Texture" id=32]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Idle/Bringer-of-Death_Idle_8.png" type="Texture" id=33]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Walk/Bringer-of-Death_Walk_2.png" type="Texture" id=34]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Walk/Bringer-of-Death_Walk_7.png" type="Texture" id=35]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Walk/Bringer-of-Death_Walk_4.png" type="Texture" id=36]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Walk/Bringer-of-Death_Walk_5.png" type="Texture" id=37]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Walk/Bringer-of-Death_Walk_8.png" type="Texture" id=38]
+[ext_resource path="res://arte/inimigoPoison/Individual Sprite/Walk/Bringer-of-Death_Walk_6.png" type="Texture" id=39]
+[ext_resource path="res://cenas/hitbox.tscn" type="PackedScene" id=40]
+[ext_resource path="res://personagens/inimigoPoison.gd" type="Script" id=41]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 10 ), ExtResource( 2 ), ExtResource( 16 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 17 ), ExtResource( 14 ), ExtResource( 7 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 11.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 1 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "Death",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "Hurt",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 32 ), ExtResource( 28 ), ExtResource( 18 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ), ExtResource( 34 ), ExtResource( 26 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 35 ), ExtResource( 38 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 7.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 19.0
+height = 22.0
+
+[node name="inimigoPoison" type="KinematicBody2D"]
+collision_layer = 2
+collision_mask = 9
+script = ExtResource( 41 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Walk"
+frame = 3
+playing = true
+
+[node name="ray_wall" type="RayCast2D" parent="."]
+position = Vector2( 35, 20 )
+enabled = true
+cast_to = Vector2( -32, 0 )
+collision_mask = 8
+
+[node name="hitbox" parent="ray_wall" instance=ExtResource( 40 )]
+modulate = Color( 0.945098, 1, 0, 1 )
+position = Vector2( 0, -27 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3, 21 )
+shape = SubResource( 2 )
+
+[connection signal="body_entered" from="ray_wall/hitbox" to="." method="_on_hitbox_body_entered"]
