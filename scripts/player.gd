@@ -6,7 +6,7 @@ var gravity = 1200
 var jump_force = -800
 var is_grounded
 onready var raycasts = $raycasts
-var health = 5
+var health = 3
 var hurted = false
 var knock_back_dir = 1
 var knock_back_int = 2000

@@ -22,4 +22,6 @@ func _on_back_pressed():
 
 func _on_Button_pressed():
 	get_tree().change_scene("res://cenas/risada do peludao.tscn")
+	yield(get_tree().create_timer(31), "timeout")
+	
 
