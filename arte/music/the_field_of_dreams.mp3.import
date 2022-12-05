@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/the_field_of_dreams.mp3-c7cdbeaeb41ace1007bdfe2cd017bbe3.mp3str"
+
+[deps]
+
+source_file="res://arte/music/the_field_of_dreams.mp3"
+dest_files=[ "res://.import/the_field_of_dreams.mp3-c7cdbeaeb41ace1007bdfe2cd017bbe3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

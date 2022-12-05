@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/мистичная тема.mp3-73192fe836d04fc4b0abc53dfa160fd1.mp3str"
+
+[deps]
+
+source_file="res://arte/music/мистичная тема.mp3"
+dest_files=[ "res://.import/мистичная тема.mp3-73192fe836d04fc4b0abc53dfa160fd1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
