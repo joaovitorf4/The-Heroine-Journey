@@ -12,6 +12,9 @@ config_version=4
 
 config/name="The Heroine Journey"
 run/main_scene="res://cenas/MenuStart.tscn"
+boot_splash/use_filter=false
+config/icon="res://icone_jogo.png"
+config/windows_native_icon="res://icone_jogo.ico"
 
 [autoload]
 
