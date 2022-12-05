@@ -986,9 +986,9 @@ position = Vector2( 917, 176 )
 script = ExtResource( 16 )
 health = 3
 
-[node name="musicaFundo" type="AudioStreamPlayer2D" parent="."]
+[node name="musicaFundo" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 17 )
-volume_db = -22.286
+volume_db = -13.983
 autoplay = true
 
 [connection signal="body_entered" from="fallzone" to="fallzone" method="_on_fallzone_body_entered"]

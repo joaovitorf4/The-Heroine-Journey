@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://font/CloisterBlack.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://scripts/creditos.gd" type="Script" id=2]
@@ -48,6 +48,28 @@ Button/styles/hover = SubResource( 8 )
 Button/styles/normal = SubResource( 9 )
 Button/styles/pressed = SubResource( 10 )
 
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0, 0, 0.2, 0.717647 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0, 0, 0, 0 )
+
+[sub_resource type="Theme" id=17]
+Button/styles/disabled = SubResource( 12 )
+Button/styles/focus = SubResource( 13 )
+Button/styles/hover = SubResource( 14 )
+Button/styles/normal = SubResource( 15 )
+Button/styles/pressed = SubResource( 16 )
+
 [node name="Creditos" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -88,10 +110,10 @@ margin_bottom = 262.0
 custom_colors/font_color = Color( 0.407843, 0.0352941, 0.0352941, 1 )
 custom_fonts/font = SubResource( 2 )
 text = "
-BaianosMenu
-JoaoVitorFod4
-ArthurG12
-Azyury
+BaianosMenu(CHAD)
+JoaoVitorFod4(CHAD)
+ArthurG12(Mochila)
+Azyury(Mochila)
 "
 align = 1
 
@@ -128,4 +150,12 @@ theme = SubResource( 11 )
 text = "Return"
 script = ExtResource( 2 )
 
+[node name="Button" type="Button" parent="."]
+margin_left = 229.0
+margin_top = 499.0
+margin_right = 286.0
+margin_bottom = 527.0
+theme = SubResource( 17 )
+
 [connection signal="pressed" from="back" to="back" method="_on_back_pressed"]
+[connection signal="pressed" from="Button" to="back" method="_on_Button_pressed"]
